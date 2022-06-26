@@ -1,10 +1,12 @@
 import ResponsiveAppBar from "./ResponsiveAppBar";
 import FaqCard from "./FaqCard";
+import PersonCard from "./PersonCard";
 
 import {
   Box, Typography, Button, Card, Collapse,
   ThemeProvider, createTheme, responsiveFontSizes,
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
+  Grid,
 } from '@mui/material';
 
 import {green} from '@mui/material/colors';
@@ -183,11 +185,56 @@ function App() {
             </Typography>
           </Box>
 
-          <Box display="flex" flexDirection="column">
+          <Box display="flex" flexDirection="column"  sx={{marginX: "20%"}}>
             <FaqCard
               question="this is the question"
               answer="this is the text that is the answer to the question"
             />
+          </Box>
+
+          <Box display="flex" flexDirection="column" alignItems="center" >
+            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
+              <Typography variant="h2">Team</Typography>
+            </Card>
+          </Box>
+
+          <Box display="flex" flexDirection="column" sx={{marginX: "20%"}}>
+            <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+
+            </Grid>
+          </Box>
+
+          <Box display="flex" flexDirection="column" alignItems="center" >
+            <Typography variant="h3">Mentors and Judges</Typography>
+          </Box>
+          <Box display="flex" flexDirection="column" sx={{marginX: "20%"}}>
+            <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+              <Grid item xs={4}>
+                <PersonCard/>
+              </Grid>
+
+            </Grid>
           </Box>
 
         </Box>
