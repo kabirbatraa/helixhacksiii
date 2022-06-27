@@ -140,7 +140,7 @@ function App() {
               <Typography variant="h2">Schedule</Typography>
             </Card>
             <Typography variant="subtitle1" sx={{marginTop: "15px"}}>
-            All time based on Pacific Time
+              All time based on Pacific Time
             </Typography>
 
 
@@ -237,6 +237,41 @@ function App() {
             </Grid>
           </Box>
 
+
+
+          <Box display="flex" flexDirection="column" alignItems="center" >
+            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
+              <Typography variant="h2">Sponsors</Typography>
+            </Card>
+          </Box>
+
+
+
+
+          <Box display="flex" flexDirection="column" alignItems="center" >
+            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
+              <Typography variant="h2">Sign Up</Typography>
+            </Card>
+            <Typography variant="subtitle1" sx={{marginTop: "15px"}}>
+              Sign up fast so the spots don't fill up!
+            </Typography>
+          </Box>
+
+          <Box display="flex" flexDirection="column" alignItems="center" >
+            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
+              <Typography variant="h2">Contact</Typography>
+            </Card>
+            <Typography variant="subtitle1" sx={{marginTop: "15px"}}>
+              Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 buisness days.
+            </Typography>
+            <Typography variant="subtitle1" sx={{marginTop: "15px"}}>
+              Email: HelixYCSP@gmail.com
+            </Typography>
+            
+            
+          </Box>
+
+          Footer
         </Box>
       </ThemeProvider>
     </>
