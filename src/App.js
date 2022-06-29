@@ -109,7 +109,7 @@ function App() {
             <Button variant="outlined" sx={{margin: "15px"}}>Judge</Button>
           </Box> */}
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
               <Typography variant="h2">About</Typography>
             </Card>
@@ -126,11 +126,11 @@ function App() {
               We guarantee the same amount of fun, experience, and opportunity 
               despite the hackathon being virtual.
             </Typography>
-          </Box>
+          </Box> */}
 
 
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
               <Typography variant="h2">Themes</Typography>
             </Card>
@@ -155,10 +155,10 @@ function App() {
           <Box display="flex" flexDirection="row" justifyContent="center">
             <Card>some text</Card>
             <Card>some text</Card>
-          </Box>
+          </Box> */}
 
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
               <Typography variant="h2">Schedule</Typography>
             </Card>
@@ -197,7 +197,7 @@ function App() {
               </Table>
             </TableContainer>
             
-          </Box>
+          </Box> */}
 
           <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
