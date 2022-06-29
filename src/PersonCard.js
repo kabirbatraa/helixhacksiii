@@ -1,8 +1,6 @@
 
 import {
-  Box, Typography, Button, Card, CardMedia, CardContent,
-  ThemeProvider, createTheme, responsiveFontSizes,
-  Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
+  Typography, Card, CardMedia, CardContent,
 } from '@mui/material';
 
 export default function PersonCard() {

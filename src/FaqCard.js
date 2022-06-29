@@ -1,8 +1,6 @@
 
 import {
-  Box, Typography, Button, Card, Collapse,
-  ThemeProvider, createTheme, responsiveFontSizes,
-  Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
+  Card, Collapse,
 } from '@mui/material';
 import { useState } from 'react';
 
