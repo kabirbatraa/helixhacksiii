@@ -1,16 +1,15 @@
 import ResponsiveAppBar from "./ResponsiveAppBar";
 import FaqCard from "./FaqCard";
 import PersonCard from "./PersonCard";
+import Header from "./Header";
 
 
 import {
-  Box, Typography, Button, Card,
+  Box, Typography, Card,
   ThemeProvider, createTheme, responsiveFontSizes,
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
   Grid,
 } from '@mui/material';
-
-import {green} from '@mui/material/colors';
 
 let theme = createTheme({
   palette: {
@@ -19,15 +18,15 @@ let theme = createTheme({
       // secondary: ,
     },
     secondary: {
-      main: green[500],
+      main: "#b2beff",
     },
     text: {
       primary: "#ffffff",
+      secondary: "#b2beff",
     },
     // background: '#040C18',
-    background: '#040C18',
-    // gradientBar: 'linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%)',
-    gradientBar: '#3a3153',
+    background: '#3a3153',
+    gradientBar: 'linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%)',
     gradientText: 'linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%)',
     thirdGradient: 'radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%)',
     mainGradient: "linear-gradient(to right, tomato, cyan)",
@@ -90,13 +89,14 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Box sx={{background: theme.palette.gradientBar}}>
+        <Box sx={{background: theme.palette.background}}>
 
 
           <ResponsiveAppBar/>
 
+          <Header gradient={theme.palette.gradientBar}/>
 
-          <Box textAlign='center'>
+          {/* <Box textAlign='center'>
             <Typography variant='h1' >HelixHacksIII</Typography>
             <Typography variant='h3' >ONLINE HACKATHON</Typography>
             <Typography variant='h6'>sign up to be ...</Typography>
@@ -107,7 +107,7 @@ function App() {
             <Button variant="outlined" sx={{margin: "15px"}}>Participant</Button>
             <Button variant="outlined" sx={{margin: "15px"}}>Mentor</Button>
             <Button variant="outlined" sx={{margin: "15px"}}>Judge</Button>
-          </Box>
+          </Box> */}
 
           <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
