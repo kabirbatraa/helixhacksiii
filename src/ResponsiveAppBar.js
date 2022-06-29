@@ -2,37 +2,28 @@ import React from 'react';
 
 import {
   AppBar, Box, Toolbar, IconButton, Typography, Menu,
-  Container, Avatar, Button, Tooltip, MenuItem, 
+  Container, Button, MenuItem, 
   
 } from '@mui/material'
 
 import MenuIcon from '@mui/icons-material/Menu';
-import AdbIcon from '@mui/icons-material/Adb';
 
 import Icon from '@mui/material/Icon';
 import logo from './HelixLogo.svg';
 
 const pages = ['About', 'Themes', 'Schedule', 'FAQ', 'Team', 'Sponsors', 'Sign-Up', 'Contact']
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
   };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
     <AppBar position="static">
@@ -73,7 +64,7 @@ const ResponsiveAppBar = () => {
 
 
 
-          <Box sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               onClick={handleOpenNavMenu}
@@ -110,21 +101,20 @@ const ResponsiveAppBar = () => {
           </Box>
 
 
-          <Icon fontSize="large" sx={{textAlign: "center", cursor: "pointer", display: { xs: 'flex', md: 'none' },}} >
+          {/* <Icon sx={{fontSize: 30, textAlign: "center", cursor: "pointer", display: { xs: 'flex', md: 'none' },}} >
             <Box
               component="img"
               sx={{
                 height: "100%",
                 // display: { xs: 'flex', md: 'none' }, 
-                mr: 1 
               }}
               alt="logo"
               src={logo}
             />
-          </Icon>
+          </Icon> */}
           <Button
-            variant="outlined"
             sx={{
+              ml: -1,
               mr: 2,
               display: { xs: 'flex', md: 'none' },
               flexGrow: 0,
@@ -133,8 +123,22 @@ const ResponsiveAppBar = () => {
               color: 'white',
             }}
           >
+            <Icon sx={{fontSize: 30, textAlign: "center", cursor: "pointer", display: { xs: 'flex', md: 'none' },}} >
+              <Box
+                component="img"
+                sx={{
+                  height: "100%",
+                  // display: { xs: 'flex', md: 'none' }, 
+                }}
+                alt="logo"
+                src={logo}
+              />
+            </Icon>
             HelixHacksIII
           </Button>
+
+          <Box sx={{flexGrow: 1, display: { xs: 'flex', md: 'none' } }}> </Box>
+
 
 
 
