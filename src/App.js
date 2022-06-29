@@ -94,7 +94,7 @@ function App() {
 
           <ResponsiveAppBar/>
 
-          <Header gradient={theme.palette.gradientBar}/>
+          <Header gradient={theme.palette.gradientText}/>
 
           {/* <Box textAlign='center'>
             <Typography variant='h1' >HelixHacksIII</Typography>

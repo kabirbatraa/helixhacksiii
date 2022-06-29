@@ -7,13 +7,14 @@ import {
 export default function Header(props) {
   console.log(props.gradient);
   return (
-    <Box display="flex" flexDirection="column" justifyContent="center" sx={{height: "100vh"}}>
+    <Box display="flex" flexDirection="column" justifyContent="center" sx={{height: "100vh",}}>
       <Box textAlign='center'>
         <Typography variant='h1' sx={{
           background: props.gradient,
           backgroundClip: "text",
           color: "transparent",
         }}>HelixHacksIII</Typography>
+        {/* <Typography variant='h1' >HelixHacksIII</Typography> */}
         <Typography variant='h5'>Date 1 to Date 2</Typography>
         <Typography variant='h6'>sign up to be ...</Typography>
       </Box>
