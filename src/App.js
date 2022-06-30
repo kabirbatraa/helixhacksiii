@@ -2,7 +2,7 @@ import ResponsiveAppBar from "./ResponsiveAppBar";
 import FaqCard from "./FaqCard";
 import PersonCard from "./PersonCard";
 import Header from "./Header";
-
+import ContentCard from './ContentCard';
 
 import {
   Box, Typography, Card,
@@ -15,7 +15,6 @@ let theme = createTheme({
   palette: {
     primary: {
       main: '#5f43b2',
-      // secondary: ,
     },
     secondary: {
       main: "#b2beff",
@@ -24,6 +23,20 @@ let theme = createTheme({
       primary: "#ffffff",
       secondary: "#b2beff",
     },
+
+    logoColors: {
+      darkPurple: "#59496e",
+      lightPurple: "#c1a6d1",
+      mediumPurple: "#9770b1"
+    },
+
+    detailColors: {
+      pearlyPurple: '#ae6a9b',
+      tan: '#ceb79a',
+    },
+
+    backgroundGradient: 'linear-gradient(180deg, rgba(58,49,83,1) 0%, rgba(4,12,24,1) 100%);',
+
     // background: '#040C18',
     background: '#3a3153',
     gradientBar: 'linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%)',
@@ -89,25 +102,12 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Box sx={{background: theme.palette.background}}>
+        <Box sx={{background: theme.palette.backgroundGradient}}>
 
 
           <ResponsiveAppBar/>
 
-          <Header gradient={theme.palette.gradientText}/>
-
-          {/* <Box textAlign='center'>
-            <Typography variant='h1' >HelixHacksIII</Typography>
-            <Typography variant='h3' >ONLINE HACKATHON</Typography>
-            <Typography variant='h6'>sign up to be ...</Typography>
-          </Box>
-
-          
-          <Box display="flex" justifyContent="center" >
-            <Button variant="outlined" sx={{margin: "15px"}}>Participant</Button>
-            <Button variant="outlined" sx={{margin: "15px"}}>Mentor</Button>
-            <Button variant="outlined" sx={{margin: "15px"}}>Judge</Button>
-          </Box> */}
+          <Header theme={theme}/>
 
           {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
@@ -198,22 +198,54 @@ function App() {
             </TableContainer>
             
           </Box> */}
+          
+          {/* ABOUT */}
+          <ContentCard color={theme.palette.primary.main}>
+            <Box display="flex" flexDirection="column" alignItems="center" pb={1}>
+              <Typography variant="h2">About</Typography>
+              <Typography variant="subtitle1" sx={{mt: 1, fontStyle: 'italic'}}>We love inspiring!</Typography>
+              <Typography variant="body1" sx={{marginY: 1, textAlign: "center"}}>
+                Helix Hacks II is a hackathon designed to inspire and empower 
+                young coders to pursue and develop their programming skills. Over the course of 30 hours, 
+                teams up to 4 participants will work to develop a software project that helps to solve a 
+                real-world problem.
+              </Typography>
+              <Typography variant="body1" sx={{marginY: 1, textAlign: "center"}}>
+                Due to quarantine, we have converted to an online hackathon so that our 
+                participants still have the same opportunity to learn and explore. 
+                We guarantee the same amount of fun, experience, and opportunity 
+                despite the hackathon being virtual.
+              </Typography>
+            </Box>
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
+          </ContentCard>
+
+          {/* FAQ */}
+          <ContentCard color={theme.palette.detailColors.pearlyPurple}>
+            <Box display="flex" flexDirection="column" alignItems="center" pb={1}>
               <Typography variant="h2">FAQ</Typography>
-            </Card>
-            <Typography variant="subtitle1" sx={{marginTop: "15px"}}>
-              Feel free to email us if you still have any questions!
-            </Typography>
-          </Box>
+              <Typography variant="subtitle1" sx={{mt: 1}}>
+                Feel free to email us if you still have any questions!
+              </Typography>
+            </Box>
 
-          <Box display="flex" flexDirection="column"  sx={{marginX: "20%"}}>
-            <FaqCard
-              question="this is the question"
-              answer="this is the text that is the answer to the question"
-            />
-          </Box>
+            <Box display="flex" flexDirection="column">
+              <FaqCard
+                question="this is the question"
+                answer="this is the text that is the answer to the question"
+              />
+              <FaqCard
+                question="this is the question"
+                answer="this is the text that is the answer to the question"
+              />
+              <FaqCard
+                question="this is the question"
+                answer="this is the text that is the answer to the question"
+              />
+            </Box>
+          </ContentCard>
+
+          
 
           <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>

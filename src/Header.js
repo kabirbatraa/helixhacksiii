@@ -5,12 +5,16 @@ import {
 
 
 export default function Header(props) {
-  console.log(props.gradient);
   return (
-    <Box display="flex" flexDirection="column" justifyContent="center" sx={{height: "80vh",}}>
+    <Box display="flex" flexDirection="column" justifyContent="center" 
+      sx={{
+        height: "60vh", 
+        // background: "#00000011"
+      }}
+    >
       <Box textAlign='center'>
         <Typography variant='h1' sx={{
-          background: props.gradient,
+          background: props.theme.palette.gradientText,
           backgroundClip: "text",
           color: "transparent",
         }}>HelixHacksIII</Typography>

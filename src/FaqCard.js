@@ -16,14 +16,15 @@ export default function FaqCard(props) {
       <Card
         sx={{
           background: '#ffffff44',
-          cursor: 'pointer'
+          cursor: 'pointer',
+          my: 1,
         }}
         onClick={() => setDropDown((prevState) => !prevState)}
       >
         <CardActionArea>
           <Box display="flex" flexDirection="row" sx={{ p: 2 }}>
-            <Typography color="secondary">{props.question}</Typography>
-            <Box marginLeft="auto" paddingRight={2}>
+            <Typography color="white" sx={{fontWeight: 'bold'}}>{props.question}</Typography>
+            <Box marginLeft="auto" >
               {/* {dropDown ? <ExpandLess /> : <ExpandMore />} */}
               <ExpandLess
                 sx={{

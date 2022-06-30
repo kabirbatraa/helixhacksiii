@@ -3,7 +3,6 @@ import React from 'react';
 import {
   AppBar, Box, Toolbar, IconButton, Typography, Menu,
   Container, Button, MenuItem, 
-  
 } from '@mui/material'
 
 import MenuIcon from '@mui/icons-material/Menu';
@@ -50,7 +49,7 @@ const ResponsiveAppBar = () => {
             />
           </Icon>
           <Button
-            variant="outlined"
+            variant="text"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
