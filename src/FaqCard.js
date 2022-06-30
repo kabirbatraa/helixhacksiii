@@ -36,7 +36,7 @@ export default function FaqCard(props) {
             </Box>
           </Box>
           <Collapse in={dropDown}>
-            <Box sx={{ p: 2, pt: 0 }}>
+            <Box sx={{ p: 2, px: 6, pt: 0 }}>
               <Typography>{props.answer}</Typography>
             </Box>
           </Collapse>
