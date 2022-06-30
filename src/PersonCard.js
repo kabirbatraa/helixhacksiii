@@ -3,21 +3,32 @@ import {
   Typography, Card, CardMedia, CardContent,
 } from '@mui/material';
 
-export default function PersonCard() {
+export default function PersonCard(props) {
+
+  // props.
+  
+  // imageUrl
+  // name
+  // position
+
+  // url
+  // name
+  // mentor/judge
+  
   return <>
-    <Card>
+    <Card sx={{background: "#ffffff22"}}>
       <CardMedia
         component="img"
         height="200"
-        image="https://helixycsp.org/boy.png"
-        alt="person's name here"
+        image={props.imageUrl}
+        alt={props.name}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          {props.name}
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a 
+          {props.position}
         </Typography>
       </CardContent>
     </Card>

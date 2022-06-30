@@ -15,7 +15,7 @@ export default function FaqCard(props) {
     <>
       <Card
         sx={{
-          background: '#ffffff44',
+          background: '#ffffff22',
           cursor: 'pointer',
           my: 1,
         }}

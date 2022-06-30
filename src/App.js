@@ -9,6 +9,7 @@ import {
   ThemeProvider, createTheme, responsiveFontSizes,
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
   Grid,
+  Divider,
 } from '@mui/material';
 
 let theme = createTheme({
@@ -135,6 +136,82 @@ const faqData = [
 ]
 
 
+const teamData = [
+  {
+    name: "Kabir Batra",
+    url: "https://helixycsp.org/boy.png",
+    position: "Co-Founder, Website and Workshops",
+  },
+  {
+    name: "human 2",
+    url: "https://helixycsp.org/boy.png",
+    position: "Co-Founder",
+  },
+  {
+    name: "human 3",
+    url: "https://helixycsp.org/boy.png",
+    position: "Co-Founder",
+  },
+  {
+    name: "human 4",
+    url: "https://helixycsp.org/boy.png",
+    position: "Co-Founder",
+  },
+  {
+    name: "human 5",
+    url: "https://helixycsp.org/boy.png",
+    position: "Co-Founder",
+  },
+]
+
+
+const mentorData = [
+  {
+    name: "human1",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 2",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 3",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 4",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 5",
+    url: "https://helixycsp.org/boy.png",
+  },
+]
+
+
+const judgeData = [
+  {
+    name: "human1",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 2",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 3",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 4",
+    url: "https://helixycsp.org/boy.png",
+  },
+  {
+    name: "human 5",
+    url: "https://helixycsp.org/boy.png",
+  },
+]
+
 
 
 function App() {
@@ -239,7 +316,7 @@ function App() {
           </Box> */}
 
           {/* ABOUT */}
-          <ContentCard color={theme.palette.primary.main}>
+          <ContentCard color={theme.palette.logoColors.mediumPurple}>
             <Box display="flex" flexDirection="column" alignItems="center" pb={1}>
               <Typography variant="h2">About</Typography>
               <Typography variant="subtitle1" sx={{ mt: 1, fontStyle: 'italic' }}>We love inspiring!</Typography>
@@ -275,45 +352,71 @@ function App() {
                   answer={faqcard.answer}
                 />
               )}
-
-              {/* <FaqCard
-                question="this is the question"
-                answer="this is the text that is the answer to the question"
-              />
-              <FaqCard
-                question="this is the question"
-                answer="this is the text that is the answer to the question"
-              /> */}
             </Box>
           </ContentCard>
 
           {/* TEAM */}
-
-          <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{ backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px" }}>
+          <ContentCard color={theme.palette.logoColors.darkPurple}>
+            <Box display="flex" flexDirection="column" alignItems="center" pb={2}>
               <Typography variant="h2">Team</Typography>
-            </Card>
+            </Box>
+
+            <Box display="flex" flexDirection="column" >
+              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                {teamData.map(person =>
+                  <Grid item xs={4} key={person.name}>
+                    <PersonCard
+                      imageUrl={person.url}
+                      name={person.name}
+                      position={person.position}
+                    />
+                  </Grid>
+                )}
+              </Grid>
+            </Box>
+          </ContentCard>
+
+          {/* Mentors and Judges */}
+          <ContentCard color={theme.palette.primary.main}>
+            <Box display="flex" flexDirection="column" alignItems="center" pb={2}>
+              <Typography variant="h2">Mentors and Judges</Typography>
+            </Box>
+
+            <Box display="flex" flexDirection="column" >
+              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                {mentorData.map(person =>
+                  <Grid item xs={4} key={person.name}>
+                    <PersonCard
+                      imageUrl={person.url}
+                      name={person.name}
+                      position={"Mentor"}
+                    />
+                  </Grid>
+                )}
+              </Grid >
+              <Divider flexItem sx={{my: 2}} />
+              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+                {judgeData.map(person =>
+                  <Grid item xs={4} key={person.name}>
+                    <PersonCard
+                      imageUrl={person.url}
+                      name={person.name}
+                      position={"Judge"}
+                    />
+                  </Grid>
+                )}
+              </Grid>
+            </Box>
+          </ContentCard>
+
+          {/* Footer */}
+          <Box sx={{ background: theme.palette.primary.main }}>
+            <Typography sx={{ p: 2 }}>fill the footer in using example</Typography>
           </Box>
 
-          <Box display="flex" flexDirection="column" sx={{ marginX: "20%" }}>
-            <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
 
-            </Grid>
-          </Box>
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Typography variant="h3">Mentors and Judges</Typography>
           </Box>
           <Box display="flex" flexDirection="column" sx={{ marginX: "20%" }}>
@@ -332,29 +435,29 @@ function App() {
               </Grid>
 
             </Grid>
-          </Box>
+          </Box> */}
 
 
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{ backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px" }}>
               <Typography variant="h2">Sponsors</Typography>
             </Card>
-          </Box>
+          </Box> */}
 
 
 
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{ backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px" }}>
               <Typography variant="h2">Sign Up</Typography>
             </Card>
             <Typography variant="subtitle1" sx={{ marginTop: "15px" }}>
               Sign up fast so the spots don't fill up!
             </Typography>
-          </Box>
+          </Box> */}
 
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Card sx={{ backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px" }}>
               <Typography variant="h2">Contact</Typography>
             </Card>
@@ -364,15 +467,13 @@ function App() {
             <Typography variant="subtitle1" sx={{ marginTop: "15px" }}>
               Email: HelixYCSP@gmail.com
             </Typography>
+          </Box> */}
 
-
-          </Box>
-
-          <Box display="flex" flexDirection="column" alignItems="center" >
+          {/* <Box display="flex" flexDirection="column" alignItems="center" >
             <Typography variant="subtitle1" sx={{ marginTop: "15px" }}>
-              Footer
+              Footer with some buttons like instagram and email here too? (email icon is a good idea)
             </Typography>
-          </Box>
+          </Box> */}
 
 
         </Box>
