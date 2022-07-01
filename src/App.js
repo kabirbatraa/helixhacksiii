@@ -234,7 +234,7 @@ function App() {
   const pages = [
     {
       name: 'About',
-      func: () => aboutRef.current.scrollIntoView({ behavior: "smooth" }),
+      func: () => {aboutRef.current.scrollIntoView({ behavior: "smooth" });console.log("test")},
     },
     {
       name: 'FAQ',
@@ -470,8 +470,8 @@ function App() {
 
 
           {/* Footer */}
-          <Box sx={{ background: theme.palette.primary.main }} display="flex" flexDirection="column" alignItems="center">
-            <Typography variant="h6" sx={{ pt: 4 }} textAlign="center">Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 buisness days.</Typography>
+          <Box sx={{ background: theme.palette.primary.main, p:4 }} display="flex" flexDirection="column" alignItems="center">
+            <Typography variant="h6" textAlign="center">Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 buisness days.</Typography>
             <Box display="flex" flexDirection="row" sx={{ p: 2 }}>
               <InstagramIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
                 onClick={() => window.open("#")}
@@ -480,7 +480,7 @@ function App() {
                 onClick={() => window.open("#")}
               />
             </Box>
-            <Typography variant="h6" sx={{ pb: 4 }}>HelixHacksIII</Typography>
+            <Typography variant="h6">HelixHacksIII</Typography>
           </Box>
 
           {/* Email: HelixYCSP@gmail.com */}

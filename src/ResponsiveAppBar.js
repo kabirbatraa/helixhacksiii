@@ -15,14 +15,23 @@ const ResponsiveAppBar = (props) => {
 
   const pages = props.pagesAndScrollFuncs;
 
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  // const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [navMenuOpen, setNavMenuOpen] = React.useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
+  // const handleOpenNavMenu = (event) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
+
+  const handleOpenNavMenu = () => {
+    setNavMenuOpen(true);
   };
 
+  // const handleCloseNavMenu = () => {
+  //   setAnchorElNav(null);
+  // };
+
   const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
+    setNavMenuOpen(false);
   };
 
 
@@ -73,7 +82,7 @@ const ResponsiveAppBar = (props) => {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
+            {/* <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -92,11 +101,14 @@ const ResponsiveAppBar = (props) => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                <MenuItem key={page.name} 
+                  onClick={() => {handleCloseNavMenu(); page.func();}}
+                >
+
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
-            </Menu>
+            </Menu> */}
 
             
           </Box>
