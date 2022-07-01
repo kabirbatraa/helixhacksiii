@@ -10,9 +10,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Icon from '@mui/material/Icon';
 import logo from './HelixLogo.svg';
 
-const pages = ['About', 'Themes', 'Schedule', 'FAQ', 'Team', 'Sponsors', 'Sign-Up', 'Contact']
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = (props) => {
+
+  const pages = props.pagesAndScrollFuncs;
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -90,8 +92,8 @@ const ResponsiveAppBar = () => {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -147,11 +149,11 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.name}
+                onClick={() => {handleCloseNavMenu(); page.func();}}
                 sx={{ my: 2, color: 'white', display: 'block' }}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>

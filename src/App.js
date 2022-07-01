@@ -14,6 +14,7 @@ import {
 
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import { useRef } from "react";
 
 let theme = createTheme({
   palette: {
@@ -223,13 +224,45 @@ const judgeData = [
 
 
 function App() {
+
+  const aboutRef = useRef(null);
+  const faqRef = useRef(null);
+  const teamRef = useRef(null);
+  const mentorsRef = useRef(null);
+  const scheduleRef = useRef(null);
+
+  const pages = [
+    {
+      name: 'About',
+      func: () => aboutRef.current.scrollIntoView({ behavior: "smooth" }),
+    },
+    {
+      name: 'FAQ',
+      func: () => faqRef.current.scrollIntoView({ behavior: "smooth" }),
+    },
+    {
+      name: 'Team',
+      func: () => teamRef.current.scrollIntoView({ behavior: "smooth" }),
+    },
+    {
+      name: 'Mentors and Judges',
+      func: () => mentorsRef.current.scrollIntoView({ behavior: "smooth" }),
+    },
+    {
+      name: 'Schedule',
+      func: () => scheduleRef.current.scrollIntoView({ behavior: "smooth" }),
+    }
+  ]
+
   return (
     <>
       <ThemeProvider theme={theme}>
         <Box sx={{ background: theme.palette.backgroundGradient }}>
 
 
-          <ResponsiveAppBar />
+          <ResponsiveAppBar
+            pagesAndScrollFuncs={pages}
+          />
 
           <Header theme={theme} />
 
@@ -325,7 +358,7 @@ function App() {
 
           {/* ABOUT */}
           <ContentCard color={theme.palette.logoColors.mediumPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center">
+            <Box display="flex" flexDirection="column" alignItems="center" ref={aboutRef}>
               <Typography variant="h2" gutterBottom>About</Typography>
               <Typography variant="subtitle1" sx={{ fontStyle: 'italic' }}>We love inspiring!</Typography>
               <Typography variant="body1" sx={{ marginY: 1, textAlign: "center" }}>
@@ -345,7 +378,7 @@ function App() {
 
           {/* FAQ */}
           <ContentCard color={theme.palette.detailColors.pearlyPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center">
+            <Box display="flex" flexDirection="column" alignItems="center" ref={faqRef}>
               <Typography variant="h2" gutterBottom>FAQ</Typography>
               <Typography variant="subtitle1">
                 Feel free to email us if you still have any questions!
@@ -365,7 +398,7 @@ function App() {
 
           {/* TEAM */}
           <ContentCard color={theme.palette.logoColors.darkPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center">
+            <Box display="flex" flexDirection="column" alignItems="center" ref={teamRef}>
               <Typography variant="h2" gutterBottom>Team</Typography>
             </Box>
 
@@ -386,7 +419,7 @@ function App() {
 
           {/* Mentors and Judges */}
           <ContentCard color={theme.palette.primary.main}>
-            <Box display="flex" flexDirection="column" alignItems="center"
+            <Box display="flex" flexDirection="column" alignItems="center" ref={mentorsRef}
             // pb={2} (add this back in once we have mentors and judges)
             >
               <Typography variant="h2" textAlign="center" gutterBottom>Mentors and Judges</Typography>
@@ -424,7 +457,7 @@ function App() {
 
           {/* Schedule */}
           <ContentCard color={theme.palette.detailColors.test}>
-            <Box display="flex" flexDirection="column" alignItems="center">
+            <Box display="flex" flexDirection="column" alignItems="center" ref={scheduleRef}>
               <Typography variant="h2">Schedule</Typography>
               <Typography variant="h5">Coming soon!</Typography>
             </Box>
