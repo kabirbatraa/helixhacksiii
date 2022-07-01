@@ -12,6 +12,9 @@ import {
   Divider,
 } from '@mui/material';
 
+import InstagramIcon from '@mui/icons-material/Instagram';
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+
 let theme = createTheme({
   palette: {
     primary: {
@@ -33,6 +36,7 @@ let theme = createTheme({
 
     detailColors: {
       pearlyPurple: '#ae6a9b',
+      test: "#7a4a6d",
       tan: '#ceb79a',
     },
 
@@ -210,6 +214,10 @@ const judgeData = [
     name: "human 5",
     url: "https://helixycsp.org/boy.png",
   },
+  {
+    name: "human 6",
+    url: "https://helixycsp.org/boy.png",
+  },
 ]
 
 
@@ -317,9 +325,9 @@ function App() {
 
           {/* ABOUT */}
           <ContentCard color={theme.palette.logoColors.mediumPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center" pb={1}>
-              <Typography variant="h2">About</Typography>
-              <Typography variant="subtitle1" sx={{ mt: 1, fontStyle: 'italic' }}>We love inspiring!</Typography>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Typography variant="h2" gutterBottom>About</Typography>
+              <Typography variant="subtitle1" sx={{ fontStyle: 'italic' }}>We love inspiring!</Typography>
               <Typography variant="body1" sx={{ marginY: 1, textAlign: "center" }}>
                 Helix Hacks II is a hackathon designed to inspire and empower
                 young coders to pursue and develop their programming skills. Over the course of 30 hours,
@@ -337,9 +345,9 @@ function App() {
 
           {/* FAQ */}
           <ContentCard color={theme.palette.detailColors.pearlyPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center" pb={1}>
-              <Typography variant="h2">FAQ</Typography>
-              <Typography variant="subtitle1" sx={{ mt: 1 }}>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Typography variant="h2" gutterBottom>FAQ</Typography>
+              <Typography variant="subtitle1">
                 Feel free to email us if you still have any questions!
               </Typography>
             </Box>
@@ -357,14 +365,14 @@ function App() {
 
           {/* TEAM */}
           <ContentCard color={theme.palette.logoColors.darkPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center" pb={2}>
-              <Typography variant="h2">Team</Typography>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Typography variant="h2" gutterBottom>Team</Typography>
             </Box>
 
             <Box display="flex" flexDirection="column" >
-              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 9, md: 12 }}>
                 {teamData.map(person =>
-                  <Grid item xs={4} key={person.name}>
+                  <Grid item xs={3} key={person.name}>
                     <PersonCard
                       imageUrl={person.url}
                       name={person.name}
@@ -378,14 +386,17 @@ function App() {
 
           {/* Mentors and Judges */}
           <ContentCard color={theme.palette.primary.main}>
-            <Box display="flex" flexDirection="column" alignItems="center" pb={2}>
-              <Typography variant="h2">Mentors and Judges</Typography>
+            <Box display="flex" flexDirection="column" alignItems="center"
+            // pb={2} (add this back in once we have mentors and judges)
+            >
+              <Typography variant="h2" textAlign="center" gutterBottom>Mentors and Judges</Typography>
+              <Typography variant="h5">Coming soon!</Typography>
             </Box>
 
-            <Box display="flex" flexDirection="column" >
-              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+            {/* <Box display="flex" flexDirection="column" >
+              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 9, md: 12 }}>
                 {mentorData.map(person =>
-                  <Grid item xs={4} key={person.name}>
+                  <Grid item xs={3} key={person.name}>
                     <PersonCard
                       imageUrl={person.url}
                       name={person.name}
@@ -395,9 +406,9 @@ function App() {
                 )}
               </Grid >
               <Divider flexItem sx={{my: 2}} />
-              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 9, md: 12 }}>
                 {judgeData.map(person =>
-                  <Grid item xs={4} key={person.name}>
+                  <Grid item xs={3} key={person.name}>
                     <PersonCard
                       imageUrl={person.url}
                       name={person.name}
@@ -406,75 +417,40 @@ function App() {
                   </Grid>
                 )}
               </Grid>
+            </Box> */}
+          </ContentCard>
+
+
+
+          {/* Schedule */}
+          <ContentCard color={theme.palette.detailColors.test}>
+            <Box display="flex" flexDirection="column" alignItems="center">
+              <Typography variant="h2">Schedule</Typography>
+              <Typography variant="h5">Coming soon!</Typography>
             </Box>
           </ContentCard>
 
+
+          {/* Sponsors */}
+
+
+
+
           {/* Footer */}
-          <Box sx={{ background: theme.palette.primary.main }}>
-            <Typography sx={{ p: 2 }}>fill the footer in using example</Typography>
+          <Box sx={{ background: theme.palette.primary.main }} display="flex" flexDirection="column" alignItems="center">
+            <Typography variant="h6" sx={{ pt: 4 }} textAlign="center">Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 buisness days.</Typography>
+            <Box display="flex" flexDirection="row" sx={{ p: 2 }}>
+              <InstagramIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
+                onClick={() => window.open("#")}
+              />
+              <EmailOutlinedIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
+                onClick={() => window.open("#")}
+              />
+            </Box>
+            <Typography variant="h6" sx={{ pb: 4 }}>HelixHacksIII</Typography>
           </Box>
 
-
-
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Typography variant="h3">Mentors and Judges</Typography>
-          </Box>
-          <Box display="flex" flexDirection="column" sx={{ marginX: "20%" }}>
-            <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
-              <Grid item xs={4}>
-                <PersonCard />
-              </Grid>
-
-            </Grid>
-          </Box> */}
-
-
-
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{ backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px" }}>
-              <Typography variant="h2">Sponsors</Typography>
-            </Card>
-          </Box> */}
-
-
-
-
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{ backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px" }}>
-              <Typography variant="h2">Sign Up</Typography>
-            </Card>
-            <Typography variant="subtitle1" sx={{ marginTop: "15px" }}>
-              Sign up fast so the spots don't fill up!
-            </Typography>
-          </Box> */}
-
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{ backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px" }}>
-              <Typography variant="h2">Contact</Typography>
-            </Card>
-            <Typography variant="subtitle1" sx={{ marginTop: "15px" }}>
-              Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 buisness days.
-            </Typography>
-            <Typography variant="subtitle1" sx={{ marginTop: "15px" }}>
-              Email: HelixYCSP@gmail.com
-            </Typography>
-          </Box> */}
-
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Typography variant="subtitle1" sx={{ marginTop: "15px" }}>
-              Footer with some buttons like instagram and email here too? (email icon is a good idea)
-            </Typography>
-          </Box> */}
-
+          {/* Email: HelixYCSP@gmail.com */}
 
         </Box>
       </ThemeProvider>

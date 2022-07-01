@@ -19,7 +19,7 @@ export default function PersonCard(props) {
     <Card sx={{background: "#ffffff22"}}>
       <CardMedia
         component="img"
-        height="200"
+        height="150"
         image={props.imageUrl}
         alt={props.name}
       />
