@@ -234,7 +234,7 @@ function App() {
   const pages = [
     {
       name: 'About',
-      func: () => {aboutRef.current.scrollIntoView({ behavior: "smooth" });console.log("test")},
+      func: () => {aboutRef.current.scrollIntoView({ behavior: "smooth" });},
     },
     {
       name: 'FAQ',

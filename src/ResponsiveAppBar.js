@@ -3,6 +3,7 @@ import React from 'react';
 import {
   AppBar, Box, Toolbar, IconButton, Typography, Menu,
   Container, Button, MenuItem, 
+  SwipeableDrawer, List, ListItem, ListItemButton, ListItemText,
 } from '@mui/material'
 
 import MenuIcon from '@mui/icons-material/Menu';
@@ -82,6 +83,39 @@ const ResponsiveAppBar = (props) => {
             >
               <MenuIcon />
             </IconButton>
+
+            <SwipeableDrawer
+              anchor={'left'}
+              open={navMenuOpen}
+              onClose={handleCloseNavMenu}
+              onOpen={handleOpenNavMenu}
+            >
+              <Box display="flex" flexDirection="column" justifyContent="top" alignItems="start" sx={{height: "100%", background: "#000000aa"}}> 
+                <List>
+                  {pages.map(page => (
+                    <ListItem key={page.name} disablePadding>
+                      <ListItemButton onClick={() => {handleCloseNavMenu(); page.func();}}>
+                        <ListItemText primary={page.name} />
+                      </ListItemButton>
+                    </ListItem>
+                  ))}
+                </List>
+                {/* {pages.map((page) => (
+                  <Button
+                    key={page.name}
+                    variant="contained"
+                    onClick={() => {handleCloseNavMenu(); page.func();}}
+                    sx={{ m: 2, color: 'white', display: 'block' }}
+                  >
+                    {page.name}
+                  </Button>
+                ))} */}
+              </Box>
+            </SwipeableDrawer>
+
+
+
+
             {/* <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
