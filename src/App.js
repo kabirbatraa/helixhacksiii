@@ -221,8 +221,6 @@ const judgeData = [
   },
 ]
 
-
-
 function App() {
 
   const aboutRef = useRef(null);
@@ -234,23 +232,23 @@ function App() {
   const pages = [
     {
       name: 'About',
-      func: () => {aboutRef.current.scrollIntoView({ behavior: "smooth" });},
+      func: () => setTimeout(() => aboutRef.current.scrollIntoView({ behavior: "smooth" }), 0),
     },
     {
       name: 'FAQ',
-      func: () => faqRef.current.scrollIntoView({ behavior: "smooth" }),
+      func: () => setTimeout(() => faqRef.current.scrollIntoView({ behavior: "smooth" }), 0),
     },
     {
       name: 'Team',
-      func: () => teamRef.current.scrollIntoView({ behavior: "smooth" }),
+      func: () => setTimeout(() => teamRef.current.scrollIntoView({ behavior: "smooth" }), 0),
     },
     {
       name: 'Mentors and Judges',
-      func: () => mentorsRef.current.scrollIntoView({ behavior: "smooth" }),
+      func: () => setTimeout(() => mentorsRef.current.scrollIntoView({ behavior: "smooth" }), 0),
     },
     {
       name: 'Schedule',
-      func: () => scheduleRef.current.scrollIntoView({ behavior: "smooth" }),
+      func: () => setTimeout(() => scheduleRef.current.scrollIntoView({ behavior: "smooth" }), 0),
     }
   ]
 
