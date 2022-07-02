@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/helixhacksiii-website/static/css/main.2a8c0efd.css",
-    "main.js": "/helixhacksiii-website/static/js/main.cc594b8b.js",
+    "main.js": "/helixhacksiii-website/static/js/main.3b694a5d.js",
     "static/media/HelixLogo.svg": "/helixhacksiii-website/static/media/HelixLogo.90ff1dada8d01d8d2b8b7a60707c01ae.svg",
     "index.html": "/helixhacksiii-website/index.html",
     "main.2a8c0efd.css.map": "/helixhacksiii-website/static/css/main.2a8c0efd.css.map",
-    "main.cc594b8b.js.map": "/helixhacksiii-website/static/js/main.cc594b8b.js.map"
+    "main.3b694a5d.js.map": "/helixhacksiii-website/static/js/main.3b694a5d.js.map"
   },
   "entrypoints": [
     "static/css/main.2a8c0efd.css",
-    "static/js/main.cc594b8b.js"
+    "static/js/main.3b694a5d.js"
   ]
 }
