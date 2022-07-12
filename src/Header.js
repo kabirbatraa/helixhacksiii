@@ -20,7 +20,7 @@ export default function Header(props) {
         }}>HelixHacksIII</Typography>
         {/* <Typography variant='h1' >HelixHacksIII</Typography> */}
         <Typography variant='h5'>July 24-31, 2022</Typography>
-        <Typography variant='h6'>Register to be...</Typography>
+        <Typography variant='h6' gutterBottom>Register to be...</Typography>
       </Box>
       <Box display="flex" justifyContent="center" >
         <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary">Participant</Button>

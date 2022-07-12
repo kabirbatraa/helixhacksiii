@@ -355,8 +355,9 @@ function App() {
           </Box> */}
 
           {/* ABOUT */}
+          <Box ref={aboutRef}/>
           <ContentCard color={theme.palette.logoColors.mediumPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center" ref={aboutRef}>
+            <Box display="flex" flexDirection="column" alignItems="center" >
               <Typography variant="h2" gutterBottom>About</Typography>
               <Typography variant="subtitle1" sx={{ fontStyle: 'italic' }}>We love inspiring!</Typography>
               <Typography variant="body1" sx={{ marginY: 1, textAlign: "center" }}>
@@ -375,8 +376,9 @@ function App() {
           </ContentCard>
 
           {/* FAQ */}
+          <Box ref={faqRef}/>
           <ContentCard color={theme.palette.detailColors.pearlyPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center" ref={faqRef}>
+            <Box display="flex" flexDirection="column" alignItems="center" >
               <Typography variant="h2" gutterBottom>FAQ</Typography>
               <Typography variant="subtitle1">
                 Feel free to email us if you still have any questions!
@@ -395,8 +397,9 @@ function App() {
           </ContentCard>
 
           {/* TEAM */}
+          <Box ref={teamRef}/>
           <ContentCard color={theme.palette.logoColors.darkPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center" ref={teamRef}>
+            <Box display="flex" flexDirection="column" alignItems="center" >
               <Typography variant="h2" gutterBottom>Team</Typography>
             </Box>
 
@@ -416,8 +419,9 @@ function App() {
           </ContentCard>
 
           {/* Mentors and Judges */}
+          <Box ref={mentorsRef}/>
           <ContentCard color={theme.palette.primary.main}>
-            <Box display="flex" flexDirection="column" alignItems="center" ref={mentorsRef}
+            <Box display="flex" flexDirection="column" alignItems="center" 
             // pb={2} (add this back in once we have mentors and judges)
             >
               <Typography variant="h2" textAlign="center" gutterBottom>Mentors and Judges</Typography>
@@ -454,9 +458,10 @@ function App() {
 
 
           {/* Schedule */}
+          <Box ref={scheduleRef}/>
           <ContentCard color={theme.palette.detailColors.test}>
-            <Box display="flex" flexDirection="column" alignItems="center" ref={scheduleRef}>
-              <Typography variant="h2">Schedule</Typography>
+            <Box display="flex" flexDirection="column" alignItems="center" >
+              <Typography variant="h2" gutterBottom>Schedule</Typography>
               <Typography variant="h5">Coming soon!</Typography>
             </Box>
           </ContentCard>
