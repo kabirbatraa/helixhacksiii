@@ -23,11 +23,12 @@ export default function PersonCard(props) {
         image={props.imageUrl}
         alt={props.name}
       />
-      <CardContent>
+      {/* fixed height might look best (weird to have different offset heights) */}
+      <CardContent sx={{height: "75px"}}> 
         <Typography gutterBottom variant="h5" component="div">
           {props.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="textSecondary">
           {props.position}
         </Typography>
       </CardContent>

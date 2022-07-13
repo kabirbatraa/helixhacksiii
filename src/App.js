@@ -404,7 +404,7 @@ function App() {
             </Box>
 
             <Box display="flex" flexDirection="column" >
-              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 9, md: 12 }}>
+              <Grid container justifyContent="center" spacing={{ xs: 1, md: 3 }} columns={{ xs: 6, sm: 9, md: 12 }}>
                 {teamData.map(person =>
                   <Grid item xs={3} key={person.name}>
                     <PersonCard
@@ -428,31 +428,6 @@ function App() {
               <Typography variant="h5">Coming soon!</Typography>
             </Box>
 
-            {/* <Box display="flex" flexDirection="column" >
-              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 9, md: 12 }}>
-                {mentorData.map(person =>
-                  <Grid item xs={3} key={person.name}>
-                    <PersonCard
-                      imageUrl={person.url}
-                      name={person.name}
-                      position={"Mentor"}
-                    />
-                  </Grid>
-                )}
-              </Grid >
-              <Divider flexItem sx={{my: 2}} />
-              <Grid container justifyContent="center" spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 9, md: 12 }}>
-                {judgeData.map(person =>
-                  <Grid item xs={3} key={person.name}>
-                    <PersonCard
-                      imageUrl={person.url}
-                      name={person.name}
-                      position={"Judge"}
-                    />
-                  </Grid>
-                )}
-              </Grid>
-            </Box> */}
           </ContentCard>
 
 
