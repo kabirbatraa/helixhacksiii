@@ -16,6 +16,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { useRef } from "react";
 
+
 let theme = createTheme({
   palette: {
     primary: {
@@ -28,6 +29,13 @@ let theme = createTheme({
       primary: "#ffffff",
       secondary: "#b2beff",
     },
+    action: {
+      disabledBackground: '#aaaaaa77',
+      disabled: 'black'
+    },
+
+
+
 
     logoColors: {
       darkPurple: "#59496e",

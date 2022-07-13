@@ -23,9 +23,15 @@ export default function Header(props) {
         <Typography variant='h6' gutterBottom>Register to be...</Typography>
       </Box>
       <Box display="flex" justifyContent="center" >
-        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary">Participant</Button>
-        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary">Mentor</Button>
-        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary">Judge</Button>
+        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" onClick={() => window.open("https://forms.gle/fpcuh6LWC4ZA6BGY9")}>
+          Participant
+        </Button>
+        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" disabled>
+          Mentor
+        </Button>
+        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" disabled>
+          Judge
+        </Button>
       </Box>
     </Box>
   )
