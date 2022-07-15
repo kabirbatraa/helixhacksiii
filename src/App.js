@@ -4,6 +4,14 @@ import PersonCard from "./PersonCard";
 import Header from "./Header";
 import ContentCard from './ContentCard';
 
+import Sophie from './peopleImages/SophieLin.JPEG';
+import Aaditya from './peopleImages/AadityaRaj.jpg';
+import Anya from './peopleImages/AnyaAgrawal.jpeg';
+import Armaan from './peopleImages/ArmaanG.png';
+import Kabir from './peopleImages/kabir.jpg';
+import Karen from './peopleImages/KarenZhang.jpeg';
+import Tarini from './peopleImages/TariniMaram.jpeg';
+
 import {
   Box, Typography, Card,
   ThemeProvider, createTheme, responsiveFontSizes,
@@ -111,69 +119,93 @@ const rows = [
 
 const faqData = [
   {
+    question: "What is a Hackathon?",
+    answer: "A hackathon is a competition where teams of creators come together to build and present a tech-based prototype in front of judges. Throughout the hackathon, there will be many workshops and fun events, as well as access to a discord server to ask questions and talk to college student mentors. At the end, the creators of the best projects receive prizes! ",
+  },
+  {
     question: "What is our goal?",
     answer: "Our goal is to inspire young programmers to take on the challenges in the world of coding. We hope to give all our participants a memorable and delightful experience so not only are they encouraged to attend more hackathons, but excited to explore the coding world for themselves.",
   },
   {
-    question: "How much does it cost?",
+    question: "How much does it cost to attend? (trick question)",
     answer: "Absolutely NOTHING! It's free!",
   },
   {
-    question: "Who should attend?",
-    answer: "This hackathon is for everyone, grades 8 - 12.",
+    question: "What age group can attend?",
+    answer: "This hackathon is for rising 7th to 12th grade students.",
   },
   {
     question: "What will I need?",
-    answer: "Fully charged laptop, good wifi connection, comfortable and safe place to work, working microphone and speaker on computer.",
+    answer: "A computer, good wifi connection, comfortable and safe place to work, and a working microphone and speaker to communicate with your team and judges.",
   },
   {
     question: "How many people per team and what if I do not have a team yet?",
-    answer: "Up to 4 people per team. If you wish to have a team of more than four, you may do so, but note that only 4 prizes will be given to each team. If you do not have a team, then don't worry, we will find you one. We encourage you to collaborate with your team from your own homes, but if you choose to meet up, we highly advise utilizing masks and remaining distant.",
+    answer: "You may have up to 4 people per team. If you wish to have a team of more than four, you may do so, but note that only 4 prizes will be given to each team. If you do not have a team, then don't worry, we will find you one at the start of the hackathon.",
   },
   {
     question: "Do I need any programming experience?",
-    answer: "NO! We have well planned interactive workshops to educate you on almost all the topics you may need. If you have a special request for a workshop, please email us 2-3 weeks prior to the hackathon.",
+    answer: "NO! We have well planned interactive workshops to educate you on a variety of topics, more than enough to get you started! ",
   },
   {
     question: "What are the prizes?",
-    answer: "They are very exciting and rewarding prizes. In last year's hackathon, Helix Hacks, we gave away prizes such as Airpods, Go Pros, Polaroid Cameras, Portable Mini Printers, NVIDIA's Developer Kits and so much more. Due to quarantine however, there are more limitations, but we will try our best to make this year's prizes just as appealing as last year. We are planning to mail them to your respective addresses.",
+    answer: "There are very exciting and rewarding prizes. In the past two years, prizes included Airpods, Go Pros, Polaroid Cameras, Portable Mini Printers, NVIDIA's Developer Kits and so much more. Prizes will be mailed to your respective addresses.",
   },
   {
     question: "How will judging work?",
-    answer: "Due to our wide range of participants in terms of grade and age, we are most likely going to have a beginners judging category and an advanced judging category. There many more additional categories with prizes. We will also being doing a raffle.",
+    answer: "Due to our wide range of participants in terms of grade and age, we will most likely have a beginners judging category and an advanced judging category. There are many more additional categories with prizes too. There will also be a raffle!",
   },
   {
     question: "How will an online hackathon work?",
-    answer: "It will be very similar to a normal hackathon, with a few exceptions of course. Almost everything will be done via the internet. We still provide all the resources you may require - support, mentoring, guidance, workshops. We have also made this hackathon longer than typical due to the difficulties and challenges working over the internet may cause.",
+    answer: "It will be very similar to a normal hackathon, with a few exceptions of course. Almost everything will be done via discord and video calls. We still provide all the resources you may require - support, mentoring, guidance, workshops. We have also made this hackathon longer than typical due to the difficulties and challenges working over the internet may cause.",
   },
+  {
+    question: "What if I have another question?",
+    answer: "Feel free to ask questions at any time! Send us an email at helixhacksiii at gmail.com",
+  },
+  
 ]
 
 
 const teamData = [
   {
+    name: "Anya Agrawal",
+    url: Anya,
+    position: "Co-Founder, Head Director",
+  },
+  {
     name: "Kabir Batra",
-    url: "https://helixycsp.org/boy.png",
-    position: "Co-Founder, Website and Workshops",
+    url: Kabir,
+    position: "Co-Founder, Web Designer",
   },
   {
-    name: "human 2",
-    url: "https://helixycsp.org/boy.png",
-    position: "Co-Founder",
+    name: "Sophie Lin",
+    url: Sophie,
+    position: "Co-Founder, Financial Director",
   },
   {
-    name: "human 3",
-    url: "https://helixycsp.org/boy.png",
-    position: "Co-Founder",
+    name: "Tarini Maram",
+    url: Tarini,
+    position: "Co-Founder, Workshops Director",
   },
   {
-    name: "human 4",
-    url: "https://helixycsp.org/boy.png",
-    position: "Co-Founder",
+    name: "Karen Zhang",
+    url: Karen,
+    position: "Financial/Marketing Team",
   },
   {
-    name: "human 5",
-    url: "https://helixycsp.org/boy.png",
-    position: "Co-Founder",
+    name: "Armaan Gomes",
+    url: Armaan,
+    position: "Financial/Marketing Team",
+  },
+  {
+    name: "Aaditya Raj",
+    url: Aaditya,
+    position: "Outreach/Financial Team",
+  },
+  {
+    name: "Tanmayi Rao",
+    url: "https://helixycsp.org/girl.png",
+    position: "Outreach/Marketing Team",
   },
 ]
 
@@ -237,6 +269,16 @@ function App() {
   const mentorsRef = useRef(null);
   const scheduleRef = useRef(null);
 
+  // const refs = [
+  //   aboutRef, faqRef, teamRef, mentorsRef, scheduleRef
+  // ];
+
+  // function scrollToRef(ref) {
+  //   setTimeout(() => {
+  //     ref.current.scrollIntoView({ behavior: "smooth" })
+  //   }, 0);
+  // }
+
   const pages = [
     {
       name: 'About',
@@ -268,99 +310,12 @@ function App() {
 
           <ResponsiveAppBar
             pagesAndScrollFuncs={pages}
+            // refList={refs}
+            // scrollFunction={scrollToRef}
           />
 
           <Header theme={theme} />
 
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
-              <Typography variant="h2">About</Typography>
-            </Card>
-            <Typography variant="subtitle1" sx={{marginY: "15px"}}>We love inspiring!</Typography>
-            <Typography variant="body1" sx={{width: "60%", marginY: "15px", textAlign: "center"}}>
-              Helix Hacks II is a hackathon designed to inspire and empower 
-              young coders to pursue and develop their programming skills. Over the course of 30 hours, 
-              teams up to 4 participants will work to develop a software project that helps to solve a 
-              real-world problem.
-            </Typography>
-            <Typography variant="body1" sx={{width: "60%", marginY: "15px", textAlign: "center"}}>
-              Due to quarantine, we have converted to an online hackathon so that our 
-              participants still have the same opportunity to learn and explore. 
-              We guarantee the same amount of fun, experience, and opportunity 
-              despite the hackathon being virtual.
-            </Typography>
-          </Box> */}
-
-
-
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
-              <Typography variant="h2">Themes</Typography>
-            </Card>
-            <Typography variant="subtitle1" sx={{marginTop: "15px"}}>
-              Here are some inspirational categories to focus your project on.
-            </Typography>
-            <Typography variant="body1" sx={{width: "60%", marginBottom: "15px", textAlign: "center"}}>
-              These themes are not required and we will not be 
-              judging based on them, they are here soley to inspire 
-              you and provide you with ideas.
-            </Typography>
-          </Box>
-
-          <Box display="flex" flexDirection="row" justifyContent="center">
-            <Card>some text</Card>
-            <Card>some text</Card>
-          </Box>
-          <Box display="flex" flexDirection="row" justifyContent="center">
-            <Card>some text</Card>
-            <Card>some text</Card>
-          </Box>
-          <Box display="flex" flexDirection="row" justifyContent="center">
-            <Card>some text</Card>
-            <Card>some text</Card>
-          </Box> */}
-
-
-          {/* <Box display="flex" flexDirection="column" alignItems="center" >
-            <Card sx={{backgroundColor: theme.palette.cardColor, width: "fit-content", paddingY: "15px", paddingX: "25px"}}>
-              <Typography variant="h2">Schedule</Typography>
-            </Card>
-            <Typography variant="subtitle1" sx={{marginTop: "15px"}}>
-              All time based on Pacific Time
-            </Typography>
-
-
-            <TableContainer component={Paper} sx={{width: "60%"}}>
-              <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                <TableHead>
-                  <TableRow>
-                    <TableCell>Dessert (100g serving)</TableCell>
-                    <TableCell align="right">Calories</TableCell>
-                    <TableCell align="right">Fat&nbsp;(g)</TableCell>
-                    <TableCell align="right">Carbs&nbsp;(g)</TableCell>
-                    <TableCell align="right">Protein&nbsp;(g)</TableCell>
-                  </TableRow>
-                </TableHead>
-                <TableBody>
-                  {rows.map((row) => (
-                    <TableRow
-                      key={row.name}
-                      sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                    >
-                      <TableCell component="th" scope="row">
-                        {row.name}
-                      </TableCell>
-                      <TableCell align="right">{row.calories}</TableCell>
-                      <TableCell align="right">{row.fat}</TableCell>
-                      <TableCell align="right">{row.carbs}</TableCell>
-                      <TableCell align="right">{row.protein}</TableCell>
-                    </TableRow>
-                  ))}
-                </TableBody>
-              </Table>
-            </TableContainer>
-            
-          </Box> */}
 
           {/* ABOUT */}
           <Box ref={aboutRef}/>
@@ -369,15 +324,18 @@ function App() {
               <Typography variant="h2" gutterBottom>About</Typography>
               <Typography variant="subtitle1" sx={{ fontStyle: 'italic' }}>We love inspiring!</Typography>
               <Typography variant="body1" sx={{ marginY: 1, textAlign: "center" }}>
-                Helix Hacks II is a hackathon designed to inspire and empower
-                young coders to pursue and develop their programming skills. Over the course of 30 hours,
-                teams up to 4 participants will work to develop a software project that helps to solve a
+                Helix Hacks III is a hackathon designed to inspire and empower young coders 
+                to pursue and develop their programming skills. Over the course of two days, teams 
+                of up to 4 participants will work to develop a software project that helps to solve a 
                 real-world problem.
               </Typography>
               <Typography variant="body1" sx={{ marginY: 1, textAlign: "center" }}>
-                Due to quarantine, we have converted to an online hackathon so that our
-                participants still have the same opportunity to learn and explore.
-                We guarantee the same amount of fun, experience, and opportunity
+                Participants will consist of Middle and High Schoolers (Rising 7th to 12th graders). 
+              </Typography>
+              <Typography variant="body1" sx={{ marginY: 1, textAlign: "center" }}>
+                As opposed to an in-person hackathon, Helix Hacks III 
+                will be online so that more participants have the same opportunity 
+                to learn and explore. We guarantee the same amount of fun, experience, and opportunity 
                 despite the hackathon being virtual.
               </Typography>
             </Box>
@@ -462,9 +420,11 @@ function App() {
               <InstagramIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
                 onClick={() => window.open("https://www.instagram.com/helixhacksiii/")}
               />
-              <EmailOutlinedIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
-                onClick={() => window.open("#")}
-              />
+              {/* <a href="mailto:helixhacksiii@gmail.com"> */}
+                <EmailOutlinedIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
+                  onClick={() => window.open("mailto:helixhacksiii@gmail.com")}
+                />
+              {/* </a> */}
             </Box>
             <Typography variant="h6">HelixHacksIII</Typography>
           </Box>

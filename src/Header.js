@@ -19,7 +19,7 @@ export default function Header(props) {
           color: "transparent",
         }}>HelixHacksIII</Typography>
         {/* <Typography variant='h1' >HelixHacksIII</Typography> */}
-        <Typography variant='h5'>July 24-31, 2022</Typography>
+        <Typography variant='h5'>July 24 - Aug 1, 2022</Typography>
         <Typography variant='h6' gutterBottom>Register to be...</Typography>
       </Box>
       <Box display="flex" justifyContent="center" >

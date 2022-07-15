@@ -22,6 +22,9 @@ export default function PersonCard(props) {
         height="150"
         image={props.imageUrl}
         alt={props.name}
+        sx={{
+          objectPosition: "center center"
+        }}
       />
       {/* fixed height might look best (weird to have different offset heights) */}
       <CardContent sx={{height: "75px"}}> 

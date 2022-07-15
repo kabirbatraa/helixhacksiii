@@ -15,6 +15,8 @@ import logo from './HelixLogo.svg';
 const ResponsiveAppBar = (props) => {
 
   const pages = props.pagesAndScrollFuncs;
+  // props.refList
+  // props.scrollFunction()
 
   // const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [navMenuOpen, setNavMenuOpen] = React.useState(false);

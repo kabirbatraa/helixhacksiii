@@ -28,7 +28,7 @@ export default function FaqCard(props) {
               {/* {dropDown ? <ExpandLess /> : <ExpandMore />} */}
               <ExpandLess
                 sx={{
-                  transition: 'transform 0.5s ease',
+                  transition: 'transform 0.2s ease',
                   // transform: dropDown ? "scaleY(-1)" : "scaleY(1)",
                   transform: dropDown ? "rotate(0deg)" : "rotate(180deg)",
                 }}
