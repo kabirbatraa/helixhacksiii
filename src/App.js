@@ -11,6 +11,7 @@ import Armaan from './peopleImages/ArmaanG.png';
 import Kabir from './peopleImages/kabir.jpg';
 import Karen from './peopleImages/KarenZhang.jpeg';
 import Tarini from './peopleImages/TariniMaram.jpeg';
+import Tanmayi from './peopleImages/TanmayiSattenapalli.jpg';
 
 import {
   Box, Typography, Card,
@@ -200,12 +201,12 @@ const teamData = [
   {
     name: "Aaditya Raj",
     url: Aaditya,
-    position: "Outreach/Financial Team",
+    position: "Outreach/ Financial Team",
   },
   {
-    name: "Tanmayi Rao",
-    url: "https://helixycsp.org/girl.png",
-    position: "Outreach/Marketing Team",
+    name: "Tanmayi Sattenapalli",
+    url: Tanmayi,
+    position: "Outreach/ Financial Team",
   },
 ]
 

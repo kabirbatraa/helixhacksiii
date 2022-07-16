@@ -28,7 +28,7 @@ export default function PersonCard(props) {
       />
       {/* fixed height might look best (weird to have different offset heights) */}
       <CardContent sx={{height: "85px"}}> 
-        <Typography gutterBottom variant="h6" component="div">
+        <Typography gutterBottom variant="h6" component="div" sx={{lineHeight: "1.3em"}}>
           {props.name}
         </Typography>
         <Typography variant="body2" color="textSecondary">
