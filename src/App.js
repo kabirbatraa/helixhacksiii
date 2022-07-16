@@ -170,12 +170,12 @@ const teamData = [
   {
     name: "Anya Agrawal",
     url: Anya,
-    position: "Co-Founder, Head Director",
+    position: "Co-Founder, Director",
   },
   {
     name: "Kabir Batra",
     url: Kabir,
-    position: "Co-Founder, Web Designer",
+    position: "Co-Founder, Web Designer and Workshops",
   },
   {
     name: "Sophie Lin",
@@ -190,12 +190,12 @@ const teamData = [
   {
     name: "Karen Zhang",
     url: Karen,
-    position: "Financial/Marketing Team",
+    position: "Financial/ Marketing Team",
   },
   {
     name: "Armaan Gomes",
     url: Armaan,
-    position: "Financial/Marketing Team",
+    position: "Financial/ Marketing Team",
   },
   {
     name: "Aaditya Raj",
