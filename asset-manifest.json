@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.68661ace.css",
-    "main.js": "/static/js/main.73cbc8b7.js",
+    "main.js": "/static/js/main.c5670db9.js",
     "static/media/ArmaanG.png": "/static/media/ArmaanG.8592b6adf4c1e6446636.png",
     "static/media/TariniMaram.jpeg": "/static/media/TariniMaram.37a16daf5f263b919a33.jpeg",
     "static/media/SophieLin.JPEG": "/static/media/SophieLin.d61eb35463e1e9ce6c1a.JPEG",
+    "static/media/TanmayiSattenapalli.jpg": "/static/media/TanmayiSattenapalli.a77681cf2f980b6e60c6.jpg",
     "static/media/KarenZhang.jpeg": "/static/media/KarenZhang.cbc8d5ff64e38d4ba464.jpeg",
     "static/media/AadityaRaj.jpg": "/static/media/AadityaRaj.687f822917c3b43de3b8.jpg",
     "static/media/kabir.jpg": "/static/media/kabir.8c6b9efd925725c6bec6.jpg",
@@ -12,10 +13,10 @@
     "static/media/HelixLogo.svg": "/static/media/HelixLogo.90ff1dada8d01d8d2b8b7a60707c01ae.svg",
     "index.html": "/index.html",
     "main.68661ace.css.map": "/static/css/main.68661ace.css.map",
-    "main.73cbc8b7.js.map": "/static/js/main.73cbc8b7.js.map"
+    "main.c5670db9.js.map": "/static/js/main.c5670db9.js.map"
   },
   "entrypoints": [
     "static/css/main.68661ace.css",
-    "static/js/main.73cbc8b7.js"
+    "static/js/main.c5670db9.js"
   ]
 }
