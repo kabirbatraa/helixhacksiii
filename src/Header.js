@@ -26,7 +26,7 @@ export default function Header(props) {
         <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" onClick={() => window.open("https://forms.gle/uMecarmWPtMeLJpF6")}>
           Participant
         </Button>
-        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" disabled>
+        <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" onClick={() => window.open("https://forms.gle/idLXU9ikzgWv581C7")}>
           Mentor
         </Button>
         <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" onClick={() => window.open("https://forms.gle/BxH4RGrNnPxZF4dh6")}> 
