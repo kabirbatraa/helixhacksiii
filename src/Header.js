@@ -22,6 +22,7 @@ export default function Header(props) {
         <Typography variant='h5'>July 29 - 31, 2022</Typography>
         <Typography variant='h6' gutterBottom>Register to be...</Typography>
       </Box>
+
       <Box display="flex" justifyContent="center" >
         <Button variant="contained" sx={{m: 1, fontSize: "1em"}} color="secondary" onClick={() => window.open("https://forms.gle/uMecarmWPtMeLJpF6")}>
           Participant
@@ -33,6 +34,13 @@ export default function Header(props) {
           Judge
         </Button>
       </Box>
+      
+      <Box display="flex" justifyContent="center">
+      <Button variant="outlined" color="secondary" sx={{mt: 1, fontSize: "1em"}} onClick={() => window.open("https://discord.gg/UJCKSH9SvP")}>
+        Join our Discord
+      </Button>
+      </Box>
+
     </Box>
   )
 }

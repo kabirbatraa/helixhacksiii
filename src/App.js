@@ -13,12 +13,15 @@ import Karen from './peopleImages/KarenZhang.jpeg';
 import Tarini from './peopleImages/TariniMaram.jpeg';
 import Tanmayi from './peopleImages/TanmayiSattenapalli.jpg';
 
+import { ReactComponent as DiscordIcon } from "./Discord-Logo-White.svg";
+
 import {
   Box, Typography, Card,
   ThemeProvider, createTheme, responsiveFontSizes,
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
   Grid,
   Divider,
+  Icon, SvgIcon,
 } from '@mui/material';
 
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -417,7 +420,7 @@ function App() {
           {/* Footer */}
           <Box sx={{ background: theme.palette.primary.main, p:4 }} display="flex" flexDirection="column" alignItems="center">
             <Typography variant="h6" textAlign="center">Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 buisness days.</Typography>
-            <Box display="flex" flexDirection="row" sx={{ p: 2 }}>
+            <Box display="flex" flexDirection="row" sx={{ p: 2 }} alignItems="center">
               <InstagramIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
                 onClick={() => window.open("https://www.instagram.com/helixhacksiii/")}
               />
@@ -426,6 +429,10 @@ function App() {
                   onClick={() => window.open("mailto:helixhacksiii@gmail.com")}
                 />
               {/* </a> */}
+              <SvgIcon component={DiscordIcon} inheritViewBox 
+                fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
+                onClick={() => window.open("https://discord.gg/UJCKSH9SvP")}
+              />
             </Box>
             <Typography variant="h6">HelixHacksIII</Typography>
           </Box>
