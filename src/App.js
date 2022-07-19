@@ -13,10 +13,12 @@ import Karen from './peopleImages/KarenZhang.jpeg';
 import Tarini from './peopleImages/TariniMaram.jpeg';
 import Tanmayi from './peopleImages/TanmayiSattenapalli.jpg';
 
+import WolframLogo from './sponsorsImages/wolframTransparent.png';
+
 import { ReactComponent as DiscordIcon } from "./Discord-Logo-White.svg";
 
 import {
-  Box, Typography, Card,
+  Box, Typography, Card, CardMedia, CardActionArea,
   ThemeProvider, createTheme, responsiveFontSizes,
   Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper,
   Grid,
@@ -272,6 +274,7 @@ function App() {
   const teamRef = useRef(null);
   const mentorsRef = useRef(null);
   const scheduleRef = useRef(null);
+  const sponsorsRef = useRef(null);
 
   // const refs = [
   //   aboutRef, faqRef, teamRef, mentorsRef, scheduleRef
@@ -303,8 +306,14 @@ function App() {
     {
       name: 'Schedule',
       func: () => setTimeout(() => scheduleRef.current.scrollIntoView({ behavior: "smooth" }), 0),
+    },
+    {
+      name: 'Sponsors',
+      func: () => setTimeout(() => sponsorsRef.current.scrollIntoView({ behavior: "smooth" }), 0),
     }
   ]
+
+  console.log(theme.breakpoints.up('sm'))
 
   return (
     <>
@@ -413,8 +422,22 @@ function App() {
 
 
           {/* Sponsors */}
-
-
+          <Box ref={sponsorsRef}/>
+          <ContentCard color={theme.palette.logoColors.mediumPurple}>
+            <Box display="flex" flexDirection="column" alignItems="center" >
+              <Typography variant="h2" gutterBottom>Sponsors</Typography>
+              <Card >
+                <CardActionArea sx={{p: 2}} onClick={() => window.open("https://www.wolfram.com/")}>
+                  <CardMedia 
+                    component="img"
+                    src={WolframLogo} 
+                    // by not specifying height, height becomes responsive (mobile vs desktop)
+                  />
+                </CardActionArea>
+              </Card>
+              
+            </Box>
+          </ContentCard>
 
 
           {/* Footer */}
