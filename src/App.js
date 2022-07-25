@@ -442,7 +442,7 @@ function App() {
 
           {/* Footer */}
           <Box sx={{ background: theme.palette.primary.main, p:4 }} display="flex" flexDirection="column" alignItems="center">
-            <Typography variant="h6" textAlign="center">Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 buisness days.</Typography>
+            <Typography variant="h6" textAlign="center">Have any questions, comments, or concerns? Drop a message! We will get back to you in 1-2 business days.</Typography>
             <Box display="flex" flexDirection="row" sx={{ p: 2 }} alignItems="center">
               <InstagramIcon fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
                 onClick={() => window.open("https://www.instagram.com/helixhacksiii/")}
