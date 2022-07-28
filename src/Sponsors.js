@@ -1,7 +1,6 @@
 import {
   Box, Typography, Card, CardActionArea, CardMedia,
   ImageList, ImageListItem,
-  Grid,
   useMediaQuery
 } from '@mui/material'
 

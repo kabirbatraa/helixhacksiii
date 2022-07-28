@@ -4,7 +4,7 @@ import {
   Typography,
 } from '@mui/material';
 import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
+// import ExpandMore from '@mui/icons-material/ExpandMore';
 import { useState } from 'react';
 
 export default function FaqCard(props) {
