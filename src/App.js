@@ -13,8 +13,6 @@ import Karen from './peopleImages/KarenZhang.jpeg';
 import Tarini from './peopleImages/TariniMaram.jpeg';
 import Tanmayi from './peopleImages/TanmayiSattenapalli.jpg';
 
-import WolframLogo from './sponsorsImages/wolframTransparent.png';
-
 import { ReactComponent as DiscordIcon } from "./Discord-Logo-White.svg";
 
 import {
@@ -29,6 +27,7 @@ import {
 import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { useRef } from "react";
+import Sponsors from "./Sponsors";
 
 
 let theme = createTheme({
@@ -216,63 +215,63 @@ const teamData = [
 ]
 
 
-const mentorData = [
-  {
-    name: "human1",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 2",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 3",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 4",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 5",
-    url: "https://helixycsp.org/boy.png",
-  },
-]
+// const mentorData = [
+//   {
+//     name: "human1",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 2",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 3",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 4",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 5",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+// ]
 
 
-const judgeData = [
-  {
-    name: "human1",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 2",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 3",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 4",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 5",
-    url: "https://helixycsp.org/boy.png",
-  },
-  {
-    name: "human 6",
-    url: "https://helixycsp.org/boy.png",
-  },
-]
+// const judgeData = [
+//   {
+//     name: "human1",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 2",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 3",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 4",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 5",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+//   {
+//     name: "human 6",
+//     url: "https://helixycsp.org/boy.png",
+//   },
+// ]
 
 function App() {
 
   const aboutRef = useRef(null);
   const faqRef = useRef(null);
   const teamRef = useRef(null);
-  const mentorsRef = useRef(null);
+  // const mentorsRef = useRef(null);
   const scheduleRef = useRef(null);
   const sponsorsRef = useRef(null);
 
@@ -299,10 +298,10 @@ function App() {
       name: 'Team',
       func: () => setTimeout(() => teamRef.current.scrollIntoView({ behavior: "smooth" }), 0),
     },
-    {
-      name: 'Mentors and Judges',
-      func: () => setTimeout(() => mentorsRef.current.scrollIntoView({ behavior: "smooth" }), 0),
-    },
+    // {
+    //   name: 'Mentors and Judges',
+    //   func: () => setTimeout(() => mentorsRef.current.scrollIntoView({ behavior: "smooth" }), 0),
+    // },
     {
       name: 'Schedule',
       func: () => setTimeout(() => scheduleRef.current.scrollIntoView({ behavior: "smooth" }), 0),
@@ -398,7 +397,7 @@ function App() {
           </ContentCard>
 
           {/* Mentors and Judges */}
-          <Box ref={mentorsRef}/>
+          {/* <Box ref={mentorsRef}/>
           <ContentCard color={theme.palette.primary.main}>
             <Box display="flex" flexDirection="column" alignItems="center" 
             // pb={2} (add this back in once we have mentors and judges)
@@ -407,7 +406,7 @@ function App() {
               <Typography variant="h5">Coming soon!</Typography>
             </Box>
 
-          </ContentCard>
+          </ContentCard> */}
 
 
 
@@ -424,19 +423,7 @@ function App() {
           {/* Sponsors */}
           <Box ref={sponsorsRef}/>
           <ContentCard color={theme.palette.logoColors.mediumPurple}>
-            <Box display="flex" flexDirection="column" alignItems="center" >
-              <Typography variant="h2" gutterBottom>Sponsors</Typography>
-              <Card >
-                <CardActionArea sx={{p: 2}} onClick={() => window.open("https://www.wolfram.com/")}>
-                  <CardMedia 
-                    component="img"
-                    src={WolframLogo} 
-                    // by not specifying height, height becomes responsive (mobile vs desktop)
-                  />
-                </CardActionArea>
-              </Card>
-              
-            </Box>
+            <Sponsors/>
           </ContentCard>
 
 
