@@ -22,6 +22,7 @@ import {
   Grid,
   Divider,
   Icon, SvgIcon,
+  Button,
 } from '@mui/material';
 
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -415,7 +416,34 @@ function App() {
           <ContentCard color={theme.palette.detailColors.test}>
             <Box display="flex" flexDirection="column" alignItems="center" >
               <Typography variant="h2" gutterBottom>Schedule</Typography>
-              <Typography variant="h5">Coming soon!</Typography>
+              
+
+              <Card
+                sx={{
+                  background: '#ffffff22',
+                }}
+                onClick={() => window.open('https://calendar.google.com/calendar/u/5?cid=ZGJhaXAyOXBxMWFwdnFkdW5kbDdudmdsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ')}
+              >
+                <CardActionArea sx={{p: 2}}>
+                  <Typography >
+                    Check out our Google Calendar here!
+                  </Typography>
+                </CardActionArea>
+              </Card>
+              
+              {/* <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => window.open('https://calendar.google.com/calendar/u/5?cid=ZGJhaXAyOXBxMWFwdnFkdW5kbDdudmdsZm9AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ')}
+                // sx={{color: 'white'}}
+                sx={{
+                  m: 1, fontSize: "1em", color: 'white',
+                  background: '#ffffff44'
+                }}
+              >
+                Check out our Google Calendar here!
+              </Button> */}
+              {/* <Typography variant="h5">Coming soon!</Typography> */}
             </Box>
           </ContentCard>
 

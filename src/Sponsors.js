@@ -49,8 +49,13 @@ export default function Sponsors() {
       <ImageList variant="masonry" cols={numCols} gap={20}>
         {imageData.map((image) => (
           <ImageListItem key={image.img} sx={{width: '100%'}}>
-            <Card >
-              <CardActionArea sx={{ p: 2 }} onClick={() => window.open(image.url)}>
+            <Card 
+              sx={{
+                background: '#ffffff22',
+              }}
+              onClick={() => window.open(image.url)}
+            >
+              <CardActionArea sx={{ p: 2 }} >
                 <CardMedia
                   component="img"
                   src={image.img}
