@@ -313,7 +313,7 @@ function App() {
     }
   ]
 
-  console.log(theme.breakpoints.up('sm'))
+  // console.log(theme.breakpoints.up('sm'))
 
   return (
     <>

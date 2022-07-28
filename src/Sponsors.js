@@ -1,7 +1,8 @@
 import {
   Box, Typography, Card, CardActionArea, CardMedia,
   ImageList, ImageListItem,
-  Grid
+  Grid,
+  useMediaQuery
 } from '@mui/material'
 
 import WolframLogo from './sponsorsImages/wolframTransparent.png';
@@ -25,7 +26,8 @@ export default function Sponsors() {
     {img: Balsamiq, url: "https://balsamiq.com/"},
   ]
 
-  const numCols = 2;
+  const matchDownMd = useMediaQuery('(min-width:600px)');
+  const numCols = matchDownMd ? 2 : 1;
 
   return <>
     <Box display="flex" flexDirection="column" alignItems="center" >
