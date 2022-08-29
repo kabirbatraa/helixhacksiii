@@ -24,19 +24,19 @@ export default function Header(props) {
       </Box>
 
       <Box display="flex" justifyContent="center" >
-        <Button variant="contained" sx={{ m: 1, fontSize: "1em" }} color="secondary" onClick={() => window.open("https://forms.gle/uMecarmWPtMeLJpF6")} disabled>
+        <Button variant="contained" sx={{ m: 1, fontSize: "1em" }} color="secondary" onClick={() => window.open("https://forms.gle/uMecarmWPtMeLJpF6")} >
           Participant
         </Button>
-        <Button variant="contained" sx={{ m: 1, fontSize: "1em" }} color="secondary" onClick={() => window.open("https://forms.gle/idLXU9ikzgWv581C7")} disabled>
+        <Button variant="contained" sx={{ m: 1, fontSize: "1em" }} color="secondary" onClick={() => window.open("https://forms.gle/idLXU9ikzgWv581C7")} >
           Mentor
         </Button>
-        <Button variant="contained" sx={{ m: 1, fontSize: "1em" }} color="secondary" onClick={() => window.open("https://forms.gle/BxH4RGrNnPxZF4dh6")} disabled>
+        <Button variant="contained" sx={{ m: 1, fontSize: "1em" }} color="secondary" onClick={() => window.open("https://forms.gle/BxH4RGrNnPxZF4dh6")} >
           Judge
         </Button>
       </Box>
 
       <Box display="flex" justifyContent="center">
-        <Button variant="contained" color="secondary" sx={{ mt: 1, fontSize: "1em" }} onClick={() => window.open("https://discord.gg/UJCKSH9SvP")} disabled>
+        <Button variant="outlined" color="secondary" sx={{ mt: 1, fontSize: "1em" }} onClick={() => window.open("https://discord.gg/UJCKSH9SvP")} >
           Join our Discord
         </Button>
       </Box>
