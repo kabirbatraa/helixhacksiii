@@ -1,7 +1,7 @@
 {
   "name": "helixhacksiii-website",
   "version": "0.1.0",
-  "homepage": "https://helixhacksiii.com",
+  "homepage": "https://kabirbatraa.github.io/helixhacksiii-website",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
