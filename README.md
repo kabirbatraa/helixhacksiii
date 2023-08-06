@@ -1,4 +1,4 @@
-# helixhacksiii-website
+# helixhacksiii
 
 - Website I created for publicizing a hackathon that I co-hosted.  
 - Made using ReactJS and Material UI 5  
