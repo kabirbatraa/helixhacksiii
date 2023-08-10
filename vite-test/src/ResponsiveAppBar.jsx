@@ -7,10 +7,11 @@ import {
 } from '@mui/material'
 
 // import MenuIcon from '@mui/icons-material/Menu';
-import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
+// import { AccessAlarm, ThreeDRotation } from '@mui/icons-material';
 
 import Icon from '@mui/material/Icon';
 import logo from './HelixLogo.svg';
+import IconTest from './IconTest';
 
 export default function ResponsiveAppBar({ pagesAndScrollFuncs }) {
 
@@ -70,7 +71,8 @@ export default function ResponsiveAppBar({ pagesAndScrollFuncs }) {
               color="inherit"
             >
               {/* <MenuIcon /> */}
-              text
+
+              {/* <IconTest/> */}
             </IconButton>
           </Box>
 

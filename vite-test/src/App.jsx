@@ -27,6 +27,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import { useRef } from "react";
 import Sponsors from "./Sponsors";
+import IconTest from "./IconTest";
 
 
 let theme = createTheme({
@@ -213,6 +214,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Box sx={{ background: theme.palette.backgroundGradient }}>
+          <IconTest/>
 
           {/* responsive app bar */}
           <ResponsiveAppBar pagesAndScrollFuncs={[]} />
