@@ -14,13 +14,14 @@ import Tarini from './peopleImages/TariniMaram.jpeg';
 import Tanmayi from './peopleImages/TanmayiSattenapalli.jpg';
 
 // import { ReactComponent as DiscordIcon } from "./Discord-Logo-White.svg";
-import DiscordIcon from "./Discord-Logo-White.svg";
+import DiscordSvg from "./Discord-Logo-White.svg";
 
 import {
   Box, Typography, Card, CardActionArea,
   ThemeProvider, createTheme, responsiveFontSizes,
   Grid,
   SvgIcon,
+  createSvgIcon,
 } from '@mui/material';
 
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -450,11 +451,15 @@ function App() {
                   onClick={() => window.open("mailto:helixhacksiii@gmail.com")}
                 />
               {/* </a> */}
-              {/* <SvgIcon component={DiscordIcon} inheritViewBox 
-                fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
+              {/* <SvgIcon component={DiscordIcon} 
+                fontSize="large" 
+                sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
                 onClick={() => window.open("https://discord.gg/UJCKSH9SvP")}
               /> */}
+              
               {/* <DiscordIcon/> */}
+              {/* <DiscordIcon/> */}
+              {/* <img src={DiscordSvg} /> */}
             </Box>
             <Typography variant="h6">HelixHacksIII</Typography>
           </Box>
