@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/helixhacksiii-website/static/css/main.68661ace.css",
-    "main.js": "/helixhacksiii-website/static/js/main.5280d67c.js",
-    "static/media/ArmaanG.png": "/helixhacksiii-website/static/media/ArmaanG.8592b6adf4c1e6446636.png",
-    "static/media/TariniMaram.jpeg": "/helixhacksiii-website/static/media/TariniMaram.37a16daf5f263b919a33.jpeg",
-    "static/media/SophieLin.JPEG": "/helixhacksiii-website/static/media/SophieLin.d61eb35463e1e9ce6c1a.JPEG",
-    "static/media/TanmayiSattenapalli.jpg": "/helixhacksiii-website/static/media/TanmayiSattenapalli.a77681cf2f980b6e60c6.jpg",
-    "static/media/KarenZhang.jpeg": "/helixhacksiii-website/static/media/KarenZhang.cbc8d5ff64e38d4ba464.jpeg",
-    "static/media/AadityaRaj.jpg": "/helixhacksiii-website/static/media/AadityaRaj.687f822917c3b43de3b8.jpg",
-    "static/media/kabir.jpg": "/helixhacksiii-website/static/media/kabir.8c6b9efd925725c6bec6.jpg",
-    "static/media/StreamYardLogo.png": "/helixhacksiii-website/static/media/StreamYardLogo.9d5f3e5ae46b48fb4e25.png",
-    "static/media/AnyaAgrawal.jpeg": "/helixhacksiii-website/static/media/AnyaAgrawal.721c2e93af2d803e0aed.jpeg",
-    "static/media/balsamiq.png": "/helixhacksiii-website/static/media/balsamiq.fe6e5f98636fc9913ce4.png",
-    "static/media/replit.png": "/helixhacksiii-website/static/media/replit.f3ecfcabe0fb77883750.png",
-    "static/media/echoar.png": "/helixhacksiii-website/static/media/echoar.1ba13f66a5064110ec4b.png",
-    "static/media/wolframTransparent.png": "/helixhacksiii-website/static/media/wolframTransparent.940eede89fc6a6d8504c.png",
-    "static/media/taskade.png": "/helixhacksiii-website/static/media/taskade.ac444bbcf81e666ff3a3.png",
-    "static/media/magoosh-logo.svg": "/helixhacksiii-website/static/media/magoosh-logo.efaca0419a8058b5c331e93e7b4fe7a5.svg",
-    "static/media/Discord-Logo-White.svg": "/helixhacksiii-website/static/media/Discord-Logo-White.9a823ca6b8fc45606216d185eb2ba419.svg",
-    "static/media/HelixLogo.svg": "/helixhacksiii-website/static/media/HelixLogo.90ff1dada8d01d8d2b8b7a60707c01ae.svg",
-    "index.html": "/helixhacksiii-website/index.html",
-    "main.68661ace.css.map": "/helixhacksiii-website/static/css/main.68661ace.css.map",
-    "main.5280d67c.js.map": "/helixhacksiii-website/static/js/main.5280d67c.js.map"
+    "main.css": "/helixhacksiii/static/css/main.68661ace.css",
+    "main.js": "/helixhacksiii/static/js/main.7b3d31d2.js",
+    "static/media/ArmaanG.png": "/helixhacksiii/static/media/ArmaanG.8592b6adf4c1e6446636.png",
+    "static/media/TariniMaram.jpeg": "/helixhacksiii/static/media/TariniMaram.37a16daf5f263b919a33.jpeg",
+    "static/media/SophieLin.JPEG": "/helixhacksiii/static/media/SophieLin.d61eb35463e1e9ce6c1a.JPEG",
+    "static/media/TanmayiSattenapalli.jpg": "/helixhacksiii/static/media/TanmayiSattenapalli.a77681cf2f980b6e60c6.jpg",
+    "static/media/KarenZhang.jpeg": "/helixhacksiii/static/media/KarenZhang.cbc8d5ff64e38d4ba464.jpeg",
+    "static/media/AadityaRaj.jpg": "/helixhacksiii/static/media/AadityaRaj.687f822917c3b43de3b8.jpg",
+    "static/media/kabir.jpg": "/helixhacksiii/static/media/kabir.8c6b9efd925725c6bec6.jpg",
+    "static/media/StreamYardLogo.png": "/helixhacksiii/static/media/StreamYardLogo.9d5f3e5ae46b48fb4e25.png",
+    "static/media/AnyaAgrawal.jpeg": "/helixhacksiii/static/media/AnyaAgrawal.721c2e93af2d803e0aed.jpeg",
+    "static/media/balsamiq.png": "/helixhacksiii/static/media/balsamiq.fe6e5f98636fc9913ce4.png",
+    "static/media/replit.png": "/helixhacksiii/static/media/replit.f3ecfcabe0fb77883750.png",
+    "static/media/echoar.png": "/helixhacksiii/static/media/echoar.1ba13f66a5064110ec4b.png",
+    "static/media/wolframTransparent.png": "/helixhacksiii/static/media/wolframTransparent.940eede89fc6a6d8504c.png",
+    "static/media/taskade.png": "/helixhacksiii/static/media/taskade.ac444bbcf81e666ff3a3.png",
+    "static/media/magoosh-logo.svg": "/helixhacksiii/static/media/magoosh-logo.efaca0419a8058b5c331e93e7b4fe7a5.svg",
+    "static/media/Discord-Logo-White.svg": "/helixhacksiii/static/media/Discord-Logo-White.9a823ca6b8fc45606216d185eb2ba419.svg",
+    "static/media/HelixLogo.svg": "/helixhacksiii/static/media/HelixLogo.90ff1dada8d01d8d2b8b7a60707c01ae.svg",
+    "index.html": "/helixhacksiii/index.html",
+    "main.68661ace.css.map": "/helixhacksiii/static/css/main.68661ace.css.map",
+    "main.7b3d31d2.js.map": "/helixhacksiii/static/js/main.7b3d31d2.js.map"
   },
   "entrypoints": [
     "static/css/main.68661ace.css",
-    "static/js/main.5280d67c.js"
+    "static/js/main.7b3d31d2.js"
   ]
 }
