@@ -14,7 +14,7 @@ import Tarini from './peopleImages/TariniMaram.jpeg';
 import Tanmayi from './peopleImages/TanmayiSattenapalli.jpg';
 
 // import { ReactComponent as DiscordIcon } from "./Discord-Logo-White.svg";
-// import DiscordIcon from "./Discord-Logo-White.svg";
+import DiscordIcon from "./Discord-Logo-White.svg";
 
 import {
   Box, Typography, Card, CardActionArea,
@@ -454,6 +454,7 @@ function App() {
                 fontSize="large" sx={{ color: "white", height: "100%", mx: 1, cursor: 'pointer' }}
                 onClick={() => window.open("https://discord.gg/UJCKSH9SvP")}
               /> */}
+              {/* <DiscordIcon/> */}
             </Box>
             <Typography variant="h6">HelixHacksIII</Typography>
           </Box>
