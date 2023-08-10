@@ -213,7 +213,13 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <Box sx={{ background: theme.palette.backgroundGradient }}>
-          this is a test
+
+          {/* responsive app bar */}
+          <ResponsiveAppBar pagesAndScrollFuncs={[]} />
+
+          <Header theme={theme} />
+
+
         </Box>
       </ThemeProvider>
     </>
